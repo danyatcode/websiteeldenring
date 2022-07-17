@@ -11,7 +11,7 @@ body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
     color: #fff;
-    min-width: 450px;
+    min-width:600px;
 }
 .intro_page{
     background-image: url('images/stretched-1920-1080-1151249.webp');
