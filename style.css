@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 1920px;
+    color: #fff;
+}
+.intro_page{
+    background-image: url('images/stretched-1920-1080-1151249.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    max-width: 1920px;
+}
+.intro_container{
+    max-width: 1040px;
+    width: 100%;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    padding: 20px 0px;
+    position: absolute;
+    background-color: #000; 
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+.header_container{
+    max-width: 1040px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_container > div{
+    margin: 0px 15px;
+}
+.logo{
+    height: 70px;
+    width: auto;
+}
+/* golden_order */
+.golden_order{
+    position: relative;
+    background-image: url('images/1037696.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 70vh;
+}
+.in_logo{
+    text-align: center;
+}
+.in_elden{
+    margin-top: -125px;
+    height: auto;
+    max-width: 100%;
+}
+.golden_container{
+    max-width: 1700px;
+    width: 100%;
+    margin: auto;
+    padding: 0 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order_title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.golden_span{
+    color: #c19d53;
+}
+.game_info{
+    display: flex;
+    font-weight: 600;
+    padding-bottom:150px;
+}
+.game_info > div{
+    margin: 0px 15px;
+}
+.golden_content{
+    padding-top: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.golden_text{
+   padding-right: 30px;
+   grid-template-columns: 0.3fr;
+}
+.text_title{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.text_suptitle{
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.video_grid{
+    z-index: 0;
+    grid-template-rows: 0.1fr;
+    height: 100%;
+    width: 100%;
+}
+.Youtube_video{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .3s;
+    z-index: 0;position: relative;
+}
+
+.overlay{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.play_button{
+    height: auto;
+    top: 0;
+    left: 0;
+    margin: auto;
+    filter: invert(1);
+    transition: 0.2s all ease-in-out;
+}
+.overlay:hover .play_button{
+    filter: invert(72%) sepia(41%) saturate(521%) hue-rotate(2deg) brightness(83%) contrast(84%);
+}
+.text_end{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.text_suptitle p{
+    padding-bottom: 10px;
+}
+.shop_links{
+    padding-top: 100px;
+}
+.awards{
+    max-height: 100px;
+}
+/*  */
+.links_date{
+    padding-top: 30px;
+    padding-bottom: 7px;
+    font-size: .8em;
+    font-weight: 500;
+}
+.shop_links{
+    flex-direction: column;
+    display: flex;
+    padding-bottom: 60px;
+}
+.buy_links{
+    display: flex;
+    text-transform: uppercase;
+}
+.buy_links > div{
+    padding: 12px 15px;
+    margin: 0px 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-weight: 400;
+
+}
+.ps5_icon, .ps4_icon{
+    filter: invert(1);
+}
+.xbox_xs{
+    white-space: nowrap;
+    font-size: 0.8em;
+}
+.xbox_icon{
+    filter: invert(1);
+    margin-right: 5px;
+}
+.pc{
+    font-size: 1.5em;
+}
+.buy_button{
+    padding: 15px;
+    background-color: #c19d53;
+    border-radius: 5px;
+    width: 38%;
+    min-width: 200px;
+    margin: 25px auto 0px auto;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+}
+.shop_bag{
+    filter: invert(1);
+    margin: 0 15px;
+}
+.buy_button > span{
+    margin-left: 15px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.reviews{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+}
+.review_img{
+    height: auto;
+    max-width: 100%;
+}
+.p200{
+    padding: 100px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+.shop_now{
+    width: 100%;
+    background-image: url('images/bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 250vh;
+}
+.shop_header{
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 55px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.shop_container{
+    width: 100%;
+    max-width: 1290px;
+    margin:0 auto;
+}
+.ma{
+    margin: 0 auto;
+}
+.shop_logo{
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.shop_bag_logo{
+    filter: invert(1);
+    opacity: 0.5;
+    position: absolute;
+    left: -41px;
+    top: -20px;
+}
+.chose_country{
+    display: flex;
+    margin-right: 100px;
+    font-size: 0.7em;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.selection {
+    background-color: transparent;
+    border-width: 0 0 1px;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
+    font-weight: 600;
+}
+option{
+    background-color: #fff;
+    color: #000;
+}
+.select_platform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.platform_title{
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: -2px;
+
+    padding-bottom: 15px;
+}
+.select_platform .buy_links > .xbox_xs:nth-child(1){
+    background-color: #c19d53;
+}
+.slider{
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comparison_chart{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.shop_catalog{
+    display: flex;
+    justify-content: space-between;
+}
+#item{
+    margin: 15px 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: auto;
+    min-height: 550px;
+    background-image: url('images/card_bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1% 70%;
+    text-align: center;
+
+    border-radius: 0px 0px 5px 5px;
+}
+.item_img{  
+    border-radius: 5px 5px 0px 0px;
+}
+.card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+}
+.card_bag_icon{
+    filter: invert(1);
+    margin: 0px 15px;
+}
+.card_link{
+    padding: 10px 0px;
+    width: 100%;
+    background-color: #c19d53;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 150ms all ease-in;
+}
+.card_link:hover{
+    color: #c19d53;
+    background-color: inherit;
+    border:1px solid #c19d53;
+}
+.card_name{
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding-top: 35px;
+}
+.card_retailers{
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 600;
+    padding: 10px 0px;
+    border: 1px solid #fff;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 100ms all ease-in;
+}
+.card_retailers:hover{
+    opacity: .9;
+    color: rgba(67, 67, 70, 0.911);
+    border: 1px solid rgba(67, 67, 70, 0.911);
+}
+.details{
+    padding-bottom: 30px;
+}
+/* leaf */
+.leaf_container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 30px auto 0px auto;
+    padding-bottom: 30px;
+}
+.img_leaf{
+    width: 100%;
+}
+.leaf_content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.leaf_title{
+    font-size: 2.3em;
+    color: #C9B76B;
+    text-align: center;
+    font-weight: 600;
+}
+.leaf_suptitle{
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.4;
+}
+/* gallery */
+.gallery_container{
+    max-width: 1740px;
+    width: 100%;
+    margin: 0 auto;
+}
+.gallery_img{
+    width: 33%;
+    padding: 0px 10px;
+}
+.fw700{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.ornament{
+    text-align: center;
+}
+.ornament_img{
+    max-width: 100%;
+    height: auto;
+}
+.textwhitecolor{
+    color: #fff;
+}
+.span{
+    color: #fff;    
+    text-decoration: none;
+}
