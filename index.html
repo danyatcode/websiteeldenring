@@ -14,16 +14,29 @@
 </head>
 <body class="path-node page-node-type-title has-glyphicons page--with-nav-secondary m-auto">
     <div class="intro_page">
-        <header class="mb-auto header">
-            <div class="container jcsa">
-              <img class="float-md-start mb-0 img-logo" src="images/eldenring_new.webp" alt="">
-              <nav class="nav nav-masthead float-md-end jcsb">
-                <a class="nav-link py-1 px-0 active nav-margin" aria-current="page" href="#">Home</a>
-                <a class="nav-link py-1 px-0 nav-margin" href="#">Features</a>
-                <a class="nav-link py-1 px-0 nav-margin" href="#">Contact</a>
-              </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-navigation-black" aria-label="Third navbar example">
+            <div class="container header-center">
+              <img src="images/eldenring_new.webp" class="img-size" href="#">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav ml-auto mb-2 mb-sm-0">
+                  <li class="nav-item">
+                    <a class="nav-link color-gold" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-gold" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link color-gold">Disabled</a>
+                  </li>
+                </ul>
+
+              </div>
             </div>
-          </header>
+          </nav>
     </div>
     <div class="golden_order">
         <div class="in_logo">
@@ -88,8 +101,8 @@
     </div>
 
     <section class="main-content">
-        <img src="images/main-content.jpg" class="bg-main-content">
-        <div class="overlay"></div>
+        <div class="bg-main">
+            <div class="overlay"></div>
             <div class="container-lg padding-container">
                 <div class="row one-fraction">
                     <video src="images/video/video_1.webm" muted loop autoplay class="col-md-5"></video>
@@ -105,7 +118,7 @@
                 <div class="row one-fraction">
                     
                     <div class="col-md-7 row">
-                        <h3 class="col-md-7 title-left">WORLD EXPLORATION IN THE LANDS BETWEEN</h3>
+                        <h3 class="col-xs-12 col-md-5 title-left">WORLD EXPLORATION IN THE LANDS BETWEEN</h3>
                         <div class="row suptitle">
                             <p class="paragraph">ELDEN RING features vast fantastical landscapes and shadowy, complex dungeons that are connected seamlessly.</p>
                             <p class="paragraph">&nbsp</p>
@@ -126,6 +139,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        
         
         
     </section>

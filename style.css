@@ -478,6 +478,7 @@ option{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .nav-margin{
     margin: 0px 15px;
@@ -517,7 +518,7 @@ option{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -10;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background:#000;
@@ -536,6 +537,7 @@ option{
     padding-right: 10px;
     height: auto;
     width: 100%;
+    
 }
 .title-left{
     margin-left: auto;
@@ -550,6 +552,7 @@ option{
     padding-bottom: 10px;
     padding-left: 10px;
     z-index: 10;
+    max-width: 100%;
 }
 .suptitle{
     font-weight: 600;
@@ -558,9 +561,44 @@ option{
 .one-fraction{
     padding: 70px 0px;
 }
-
-
-
+.bg-main{
+    background-image: url('images/main-content.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index:-10;
+}
+.header-width{
+    width: 100%;
+}
+.bg-navigation-black{
+    background-color: #000;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #C9B76B;
+    padding: auto;
+}
+.color-gold{
+    color: #C9B76B;
+    font-weight: 600;
+    font-size: 2em;
+}
+.img-size{
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+.ml-auto{
+    margin-left: auto;
+}
 @media(max-width:1024px) {
     .shop_now,  
     .golden_order,
@@ -572,9 +610,21 @@ option{
     }
     body{
         width: 100%;
-        min-width: 612px;
     }
     #item{
         margin: 15px auto;
+    }
+    .title-left{
+        margin-right: auto;
+    }
+}
+@media (max-width:724px) {
+    .Youtube_video{
+        max-width: 80%;
+    }
+}
+@media (min-width:350px) {
+    .header-width{
+        min-width: 100%;
     }
 }
