@@ -5,6 +5,7 @@ font-family: 'Roboto', sans-serif; */
     box-sizing: border-box;
 }
 body{
+    width: 100%;
 }
 .intro_page{
     background-image: url('images/stretched-1920-1080-1151249.webp');
@@ -419,7 +420,7 @@ option{
     width: 100%;
     max-width: 1024px;
     margin: 30px auto 0px auto;
-    padding-bottom: 30px;
+    padding: 0px 10px 30px 10px;
 }
 .img_leaf{
     width: 100%;
@@ -444,6 +445,7 @@ option{
     max-width: 1740px;
     width: 100%;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 .gallery_img{
     width: 33%;
@@ -469,7 +471,7 @@ option{
 }
 .jcsa{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .jcsb{
@@ -479,13 +481,86 @@ option{
 }
 .nav-margin{
     margin: 0px 15px;
-    color: #C9B76B;
+    color: #c19d53;
+    font-weight: 500;
 }
 .img-logo{
     max-width: 100%;
     height: auto;
     width: 200px;
 }
+.item-margin{
+    margin: 30px auto 0px auto;
+}
+/* main-content */
+
+.bg-main-content{
+    position: fixed;
+    height: auto;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -10;
+}
+.main-content{
+    position: relative;
+}
+.padding-container{
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1000;
+    color: #fff;
+    font-weight: 500;
+
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background:#000;
+  mix-blend-mode: darken;
+  opacity:0.6;
+
+}
+.title-right{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #C9B76B;
+    margin-left: -80px;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    height: auto;
+    width: 100%;
+}
+.title-left{
+    margin-left: auto;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #c9b76b;
+    height: auto;
+    width: 100%;
+    margin-right: -80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    z-index: 10;
+}
+.suptitle{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.one-fraction{
+    padding: 70px 0px;
+}
+
+
+
 @media(max-width:1024px) {
     .shop_now,  
     .golden_order,
@@ -498,5 +573,8 @@ option{
     body{
         width: 100%;
         min-width: 612px;
+    }
+    #item{
+        margin: 15px auto;
     }
 }
