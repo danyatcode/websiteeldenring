@@ -159,6 +159,8 @@ body{
 }
 .awards{
     max-height: 100px;
+    max-width: 100%;
+    height: auto;
 }
 /*  */
 .links_date{
@@ -485,7 +487,7 @@ option{
     width: 200px;
 }
 @media(max-width:1024px) {
-    .shop_now,
+    .shop_now,  
     .golden_order,
     .intro_page{
         background-attachment: scroll;
@@ -494,7 +496,7 @@ option{
         background-size: cover;
     }
     body{
-        min-width: 550px;
         width: 100%;
+        min-width: 612px;
     }
 }
