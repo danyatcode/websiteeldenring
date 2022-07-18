@@ -592,9 +592,10 @@ option{
     font-size: 2em;
 }
 .img-size{
-    max-width: 100%;
+    max-height: 65px;
+    transition: transform .2s;
+    width: auto;
     height: auto;
-    width: 300px;
 }
 .ml-auto{
     margin-left: auto;
@@ -610,6 +611,7 @@ option{
     }
     body{
         width: 100%;
+        min-width: 600px;
     }
     #item{
         margin: 15px auto;
