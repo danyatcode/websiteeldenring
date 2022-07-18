@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="icon" href="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Elden</title>
 </head>
-<body>
+<body class="path-node page-node-type-title has-glyphicons page--with-nav-secondary m-auto">
     <div class="intro_page">
-        <div class="header">
-            <div class="header_container textwhitecolor">
-                <img src="images/eldenring_new.webp" alt="" class="logo">
-                <div class="key_features">Key features</div>
-                <div class="key_features">Shop now</div>
-                <div class="key_features">Media</div>
-                <div class="key_features">Wiki</div>
-            </div>   
-        </div>
+        <header class="mb-auto header">
+            <div class="container jcsa">
+              <img class="float-md-start mb-0 img-logo" src="images/eldenring_new.webp" alt="">
+              <nav class="nav nav-masthead float-md-end jcsb">
+                <a class="nav-link py-1 px-0 active nav-margin" aria-current="page" href="#">Home</a>
+                <a class="nav-link py-1 px-0 nav-margin" href="#">Features</a>
+                <a class="nav-link py-1 px-0 nav-margin" href="#">Contact</a>
+              </nav>
+            </div>
+          </header>
     </div>
     <div class="golden_order">
         <div class="in_logo">
@@ -84,6 +87,49 @@
         </div>
     </div>
 
+    <section class="main-content">
+        <img src="images/main-content.jpg" class="bg-main-content">
+        <div class="overlay"></div>
+            <div class="container-lg padding-container">
+                <div class="row one-fraction">
+                    <video src="images/video/video_1.webm" muted loop autoplay class="col-md-5"></video>
+                    <div class="col-md-7">
+                        <h3 class="col-md-7 title-right">a new fantasy world</h3>
+                        <div class="row suptitle">
+                            <p class="paragraph">Journey through the Lands Between, a new fantasy world created by Hidetaka Miyazaki, creator of the influential DARK SOULS video game series, and George R. R. Martin, author of The New York Times best-selling fantasy series, A Song of Ice and Fire. </p>
+                            <p class="paragraph">&nbsp</p>
+                            <p class="paragraph">Unravel the mysteries of the Elden Ring’s power. Encounter adversaries with profound backgrounds, characters with their own unique motivations for helping or hindering your progress, and fearsome creatures. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row one-fraction">
+                    
+                    <div class="col-md-7 row">
+                        <h3 class="col-md-7 title-left">WORLD EXPLORATION IN THE LANDS BETWEEN</h3>
+                        <div class="row suptitle">
+                            <p class="paragraph">ELDEN RING features vast fantastical landscapes and shadowy, complex dungeons that are connected seamlessly.</p>
+                            <p class="paragraph">&nbsp</p>
+                            <p class="paragraph">Traverse the breathtaking world on foot or on horseback, alone or online with other players, and fully immerse yourself in the grassy plains, suffocating swamps, spiraling mountains, foreboding castles and other sites of grandeur on a scale never seen before in a FromSoftware title. </p>
+                        </div>
+                    </div>
+                    <video src="images/video/video_2.webm" muted loop autoplay class="col-md-5"></video>
+                </div>
+                <div class="row one-fraction">
+                    <video src="images/video/video_3.webm" muted loop autoplay class="col-md-5"></video>
+                    <div class="col-md-7 row">
+                        <h3 class="col-md-7 title-right">GENRE-DEFINING GAMEPLAY</h3>
+                        <div class="row suptitle">
+                            <p class="paragraph">Create your character in FromSoftware's refined action-RPG and define your playstyle by experimenting with a wide variety of weapons, magical abilities, and skills found throughout the world. </p>
+                            <p class="paragraph">&nbsp</p>
+                            <p class="paragraph">Charge into battle, pick off enemies one-by-one using stealth, or even call upon allies for aid. Many options are at your disposal as you decide how to approach exploration and combat. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    </section>
+
     <section class="shop_now textwhitecolor">
         <header class="shop_header">    
             <div class="shop_logo">
@@ -135,7 +181,7 @@
                 </div>
                 <div class="container ma">
                     <div class="row">
-                        <div id="item" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div id="item" class="col-xs-9 col-sm-9 col-md-4 col-lg-4 item-margin">
                             <img height="auto" width="400px" src="images/card/ER_standard_keyart.webp" alt="" class="item_img">
                             <div class="card_name">Standard Edition</div>
                             <div class="card_content">
@@ -149,7 +195,7 @@
                             </div>
                         </div>
     
-                        <div id="item" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div id="item" class="col-xs-9 col-sm-9 col-md-4 col-lg-4 item-margin">
                             <img height="auto" width="400px" src="images/card/ER_digital_1920x1080_EN2.webp" alt="" class="item_img">
                             <div class="card_name">Digital Deluxe Edition</div>
                             <div class="card_content">
@@ -161,7 +207,7 @@
                             </div>
                         </div>
     
-                        <div id="item" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div id="item" class="col-xs-9 col-sm-9 col-md-4 col-lg-4 item-margin">
                             <img height="auto" width="400px" src="images/card/ER_Launch-Edition_1920x1080_en.webp" alt="" class="item_img">
                             <div class="card_name">Launch Edition</div>
                             <div class="card_content">
@@ -196,9 +242,9 @@
 
         <div class="gallery_container">
             <div class="row">
-                <img src="images/gallery/gallery_1.webp" alt="" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="images/gallery/gallery_2.webp" alt="" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="images/gallery/gallery_3.webp" alt="" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="images/gallery/gallery_1.webp" alt="" class="col-xs-9 col-sm-9 col-md-4 col-lg-4 item-margin">
+                <img src="images/gallery/gallery_2.webp" alt="" class="col-xs-9 col-sm-9 col-md-4 col-lg-4 item-margin">
+                <img src="images/gallery/gallery_3.webp" alt="" class="col-xs-9 col-sm-9 col-md-4 col-lg-4 item-margin">
             </div>
 
         </div>
@@ -224,6 +270,6 @@
 
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
 </body>
 </html>
